@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="toDoList">
+      <h1>To Do List</h1>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label"
+              >Study 10:00AM - 2:00PM</label
+            >
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label"
+              >Study 10:00AM - 2:00PM</label
+            >
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label"
+              >Study 10:00AM - 2:00PM</label
+            >
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label"
+              >Study 10:00AM - 2:00PM</label
+            >
+          </div>
+        </li>
+      </ul>
+      <div class="buttonBox">
+        <button type="button" class="btn btn-outline-danger delButton">
+          Delete
+        </button>
+        <button type="button" class="btn btn-outline-info addButton">
+          Add+
+        </button>
+      </div>
+    </div>
+
+    <!--ADD DIALOG & DELETE DIALOG  -->
+
+    <div class="add-dialog m-3 hidden">
+      <div class="m-3">
+        <h4>Please Enter Your List</h4>
+        <input type="text" class="form-control mt-3 addListContent" value="" />
+        <button class="btn btn-outline-info mt-3 addListButton">OK</button>
+        <button class="btn btn-outline-secondary mt-3 clearTextButton">
+          Clear
+        </button>
+
+        <button
+          type="button"
+          class="btn-close close-button"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+
+    <div class="delete-dialog"></div>
+    <div class="overlay hidden"></div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
